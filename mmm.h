@@ -13,4 +13,10 @@ void mmm_seq();
 void* mmm_par(void *);
 double mmm_verify();
 
+typedef struct thread_args {
+    int tid;
+    int start_row;
+    int end_row;
+} thread_args;
+
 #endif /* MMM_H_ */
